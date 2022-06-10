@@ -1,3 +1,12 @@
-# Your code goes here.
-# You can delete these comments, but do not change the name of this file
-# Write your code to expect a terminal of 80 characters wide and 24 rows high
+import random
+from words import words 
+
+
+print(
+    """
+    Welcome to Mr HangMan game!
+    The rules are pretty simple, you are given a random word,
+    to which you have 6 attempts at guessing before Mr HangMan is hung
+    Best of luck!
+    """
+)
