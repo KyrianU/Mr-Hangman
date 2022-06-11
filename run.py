@@ -10,3 +10,12 @@ print(
     Best of luck!
     """
 )
+
+def get_random_word (words):
+    """
+    Generates a random word from the words.py
+    """
+    word = random.choice(words)
+    while '-' in word " " in words:
+        word = random.choice(words)
+    return word.upper()
