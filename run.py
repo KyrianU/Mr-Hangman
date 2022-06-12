@@ -55,7 +55,37 @@ def start_game():
         else:
             print("Invalid input, please choose between 'Y' or 'N' ")
 
+
+def play_game():
+    """
+    Starts the game for user, a random word is then generated from the
+    words.py file for user to guess. Player will then guess how many letters are 
+    in the word
+    """
+    word = get_random_word(words).upper()
+    secret_word = '_' * len(word)
+    guessed = False
+    letters_in_word = set(word)
+    letters_guessed = []
+    attempts = 6
+    print("All the best!")
+    print(f'attempts left: {attempts}')
+    print(f'the secret word is {secret_word}')
+    while not guessed and turns > 0:
+        guess = input('Please guess a letter: \n').upper()
+        print(f'attempt remaining: {attempts}')
+        
+    
+
   
+
+if __name__ == "__main__":
+    """
+    Start game
+    """
+    player_name()
+
+
 
     
         
