@@ -63,17 +63,31 @@ def play_game():
     in the word
     """
     word = get_random_word(words).upper()
-    secret_word = '_' * len(word)
+    hidden_word = '_' * len(word)
     guessed = False
     letters_in_word = set(word)
     letters_guessed = []
     attempts = 6
     print("All the best!")
     print(f'attempts left: {attempts}')
-    print(f'the secret word is {secret_word}')
+    print(f'the hidden word is {hidden_word}')
     while not guessed and turns > 0:
         guess = input('Please guess a letter: \n').upper()
         print(f'attempt remaining: {attempts}')
+        if letters_guessed in alpha - letters_guessed:
+            letters_guessed.add(guess)
+            if letters_guessed in letters_in_word:
+                letters_in_word.remove(letters_guessed)
+                print(f'Well Done, {letters_guessed} is in the hidden word')
+            else: 
+                attempts -= 1
+                print(f'{letters_guessed} is not in the hidden word')
+        elif letters_guessed in letters_guessed:
+            print(f'You already tried letter {letters_guessed}, please try another letter')
+        else:
+            print('invalid guess, please use letters only')
+        
+                
         
     
 
