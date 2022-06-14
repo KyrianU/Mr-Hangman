@@ -36,7 +36,7 @@ def menu():
         print('Press 1 to start the game')
         print('press 2 to for the rules of the game')
         print('press 3 to exit the game')
-        choice = input('Choose one of the menu options')
+        choice = input('Choose one of the menu options: ')
         if choice == '1':
             menu_choices = False
             player_name()
