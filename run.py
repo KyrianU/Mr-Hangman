@@ -1,23 +1,14 @@
 import random
-from words import words 
 import string 
+from words import words 
 
-
-print(
-    """
-    Welcome to Mr HangMan game!
-    The rules are pretty simple, you are given a random word,
-    to which you have 6 attempts at guessing before Mr HangMan is hung
-    Best of luck!
-    """
-)
 
 def get_random_word(words):
     """
     Generates a random word from the words.py
     """
     word = random.choice(words)
-    while '-' in word or " " in words:
+    while "-" in word or " " in words:
         word = random.choice(words)
     return word.upper()
 
@@ -36,6 +27,33 @@ def player_name():
         else:
             print('Invalid name, please use letters only')
 
+def menu():
+    """
+    Displays menu choices
+    """
+    menu_choices = True
+    while menu_choices:
+        print('Press 1 to start the game')
+        print('press 2 to for the rules of the game')
+        print('press 3 to exit the game')
+        choice = input('Choose one of the menu options')
+        if choice == '1':
+            menu_choices = False
+            player_name()
+            start_game()
+        elif choice == '2':
+            menu_choices = False
+        elif choice == '3':
+            menu_choices = False
+            print('Thanks for playing, see you soon!')
+        else:
+            print(f'sorry, {choice} is not a valid option, please choose 1,2 or 3')
+            menu()
+
+
+
+        
+
 
 def start_game():
     """
@@ -50,7 +68,7 @@ def start_game():
             play_game()
             break 
         elif start_game == 'N':
-            end_game()
+            menu()
             break
         else:
             print("Invalid input, please choose between 'Y' or 'N' ")
@@ -63,19 +81,20 @@ def play_game():
     in the word
     """
     word = get_random_word(words).upper()
-    hidden_word = '_' * len(word)
+    hidden_word = " _ " * len(word)
     letters_in_word = set(word)
     letters_guessed = set()
     attempts = 6
+    print(hidden_word)
     alpha = set(string.ascii_uppercase)
     print("All the best!")
     print(f'attempts left: {attempts}')
-    print(f'the hidden word is {hidden_word}')
+    
 
     while len(letters_in_word) and attempts > 0:
         print(" Letters Guessed: ", " ".join(letters_guessed))
         print(f'attempts remaining: {attempts}')
-        guess = input('Please pick a letter: ').upper()
+        guess = input('Please pick a letter: \n').upper()
 
         if guess in alpha - letters_guessed:
             letters_guessed.add(guess)
@@ -91,7 +110,7 @@ def play_game():
             print('Invalid character, please choose letters only')
 
     if attempts == 0:
-        print(f'oops you dead. the hidden word was {hidden_word}')
+        print(f'You have lost. the hidden word was {word}')
         start_game()
     else:
         print('congrats')
@@ -112,7 +131,7 @@ if __name__ == "__main__":
     """
     Start game
     """
-    player_name()
+    menu()
 
 
 
