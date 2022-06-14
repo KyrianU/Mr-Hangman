@@ -64,28 +64,43 @@ def play_game():
     """
     word = get_random_word(words).upper()
     hidden_word = '_' * len(word)
-    guessed = False
     letters_in_word = set(word)
-    letters_guessed = []
+    letters_guessed = set()
     attempts = 6
+    alpha = set(string.ascii_uppercase)
     print("All the best!")
     print(f'attempts left: {attempts}')
     print(f'the hidden word is {hidden_word}')
-    while not guessed and turns > 0:
-        guess = input('Please guess a letter: \n').upper()
-        print(f'attempt remaining: {attempts}')
-        if letters_guessed in alpha - letters_guessed:
+
+    while len(letters_in_word) and attempts > 0:
+        print(" Letters Guessed: ", " ".join(letters_guessed))
+        print(f'attempts remaining: {attempts}')
+        guess = input('Please pick a letter: ').upper()
+
+        if guess in alpha - letters_guessed:
             letters_guessed.add(guess)
-            if letters_guessed in letters_in_word:
-                letters_in_word.remove(letters_guessed)
-                print(f'Well Done, {letters_guessed} is in the hidden word')
-            else: 
+            if guess in letters_in_word:
+                letters_in_word.remove(guess)
+                print('')
+            else:
                 attempts -= 1
-                print(f'{letters_guessed} is not in the hidden word')
-        elif letters_guessed in letters_guessed:
-            print(f'You already tried letter {letters_guessed}, please try another letter')
+                print(f'{guess} is not in the hidden word')
+        elif guess in letters_guessed:
+            print(f'You have already tried {guess}')
         else:
-            print('invalid guess, please use letters only')
+            print('Invalid character, please choose letters only')
+
+    if attempts == 0:
+        print(f'oops you dead. the hidden word was {hidden_word}')
+        start_game()
+    else:
+        print('congrats')
+        start_game()
+
+
+    
+   
+    
         
                 
         
