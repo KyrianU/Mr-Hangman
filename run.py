@@ -1,6 +1,6 @@
 import random
-import string 
-from words import words 
+import string
+from words import words
 
 
 def get_random_word(words):
@@ -18,14 +18,34 @@ def player_name():
     Requires user to input their names
     """
 
-    while True: 
-        name = input('Please enter your name: ')
+    while True:
+        name = input('Please enter your name: \n')
         if name.isalpha():
             print(f'Welcome to the game {name}, best of luck')
             start_game()
             break
         else:
             print('Invalid name, please use letters only')
+
+
+def game_rules():
+    """
+    Displays the rules of the game
+    """
+    print(
+       """
+       Welcome to Hangman!
+       The rules are very simple, you are given a random word,
+       each unsuccessful attempts at guessing a letter adds a new body 
+       part to the gallows. After 6 uncessful attempts the player will be
+       hunged and the game is over. To win the game, the player has to guess
+       the full word within the allocated 6 attempts.
+
+       Best of luck!
+       """
+        
+    )
+
 
 def menu():
     """
@@ -35,7 +55,7 @@ def menu():
     while menu_choices:
         print('Press 1 to start the game')
         print('press 2 to for the rules of the game')
-        print('press 3 to exit the game')
+        print('press 3 to exit the game \n')
         choice = input('Choose one of the menu options: ')
         if choice == '1':
             menu_choices = False
@@ -43,16 +63,13 @@ def menu():
             start_game()
         elif choice == '2':
             menu_choices = False
+            game_rules()
         elif choice == '3':
             menu_choices = False
             print('Thanks for playing, see you soon!')
         else:
-            print(f'sorry, {choice} is not a valid option, please choose 1,2 or 3')
+            print(f'sorry,{choice} is not valid, please choose 1,2 or 3')
             menu()
-
-
-
-        
 
 
 def start_game():
@@ -66,7 +83,7 @@ def start_game():
 
         if start_game == 'Y':
             play_game()
-            break 
+            break
         elif start_game == 'N':
             menu()
             break
@@ -76,9 +93,10 @@ def start_game():
 
 def play_game():
     """
-    Starts the game for user, a random word is then generated from the
-    words.py file for user to guess. Player will then guess how many letters are 
-    in the word
+    Starts the game for user, a random word
+    is then generated from thewords.py file
+    for user to guess. Player will then guess
+    how many letters are in the word
     """
     word = get_random_word(words).upper()
     hidden_word = " _ " * len(word)
@@ -89,7 +107,6 @@ def play_game():
     alpha = set(string.ascii_uppercase)
     print("All the best!")
     print(f'attempts left: {attempts}')
-    
 
     while len(letters_in_word) and attempts > 0:
         print(" Letters Guessed: ", " ".join(letters_guessed))
@@ -117,23 +134,9 @@ def play_game():
         start_game()
 
 
-    
-   
-    
-        
-                
-        
-    
-
-  
-
 if __name__ == "__main__":
     """
     Start game
     """
     menu()
 
-
-
-    
-        
