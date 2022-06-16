@@ -99,7 +99,8 @@ def game_end():
             break
         elif play_again == 'N':
             print('Thanks for playing. See you soon...\n')
-            exit()
+            enter()
+            menu()
         else:
             print("Invalid input, please chose between 'Y' or 'N \n")
 
@@ -144,7 +145,7 @@ def play_game():
 
     if attempts == 0:
         print(hangman_stages(attempts))
-        print(f'You have lost. the hidden word was {word}')
+        print(f'You have been hanged. The hidden word was {word}')
         game_end()
     else:
         print('congrats')
