@@ -23,7 +23,7 @@ def player_name():
         name = input('Please enter your name: \n')
         if name.isalpha():
             print(f'Welcome to the game {name}, best of luck! \n')
-            start_game()
+            play_game()
             break
         else:
             print('Invalid name, please use letters only')
@@ -61,7 +61,7 @@ def menu():
         if choice == '1':
             menu_choices = False
             player_name()
-            start_game()
+            play_game()
         elif choice == '2':
             menu_choices = False
             game_rules()
