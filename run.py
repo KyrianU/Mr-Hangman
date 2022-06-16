@@ -37,9 +37,8 @@ def enter():
     to the main menu
     """
     input('Press Enter to go back to the Menu')
-    
 
-
+   
 def game_rules():
     """
     Displays the rules of the game
@@ -54,9 +53,7 @@ def game_rules():
        the full word within the allocated 6 attempts.
 
        Best of luck!
-       """
-      
-    )
+       """)
     print('\n')
     enter()
     menu()
@@ -115,18 +112,20 @@ def play_game():
     how many letters are in the word
     """
     word = get_random_word(words).upper()
-    hidden_word = " _ " * len(word)
+    hidden_word = "_" * len(word)
     letters_in_word = set(word)
     letters_guessed = set()
     attempts = 6
     print(hidden_word)
     alpha = set(string.ascii_uppercase)
-    print("All the best!")
     print(f'attempts left: {attempts}')
 
     while len(letters_in_word) and attempts > 0:
-        print(" Letters Guessed: ", " ".join(letters_guessed))
-        print(f'attempts remaining: {attempts}')
+        word_completion = [letter if letter in letters_guessed
+                           else '_' for letter in word]
+        print("Letters guessed: ", " ".join(letters_guessed))
+        print(f'Attempts remaining: {attempts}')
+        print('Hidden word: ', ''.join(word_completion))
         print(hangman_stages(attempts))
         guess = input('Please pick a letter: \n').upper()
 
