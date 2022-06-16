@@ -94,7 +94,8 @@ def start_game():
 
 def game_end():
     """
-    End of the game option
+    End of the game option, user will have the option
+    to play again or the quit the game"
     """
     while True:
         print('Would you like to play again?')
