@@ -29,6 +29,17 @@ def player_name():
             print('Invalid name, please use letters only')
 
 
+def enter():
+    """
+    function specifically written for option 2
+    of the menu function. This function enables
+    player to press Enter and will take them back
+    to the main menu
+    """
+    input('Press Enter to go back to the Menu')
+    
+
+
 def game_rules():
     """
     Displays the rules of the game
@@ -46,6 +57,9 @@ def game_rules():
        """
       
     )
+    print('\n')
+    enter()
+    menu()
 
 
 def menu():
