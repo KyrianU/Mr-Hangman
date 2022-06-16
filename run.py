@@ -67,7 +67,8 @@ def menu():
             game_rules()
         elif choice == '3':
             menu_choices = False
-            print('Thanks for playing, see you soon!')
+            print('Thanks for playing, see you soon!...')
+            exit()
         else:
             print(f'sorry,{choice} is not valid, please choose 1,2 or 3')
             menu()
