@@ -32,9 +32,9 @@ def player_name():
 def enter():
     """
     function specifically written for option 2
-    of the menu function. This function enables
-    player to press Enter and will take them back
-    to the main menu
+    of the menu function and 'N' option in the game_end 
+    function. This function enablesplayer to press Enter 
+    and will take them back to the main menu
     """
     input('Press Enter to go back to the Menu')
 
