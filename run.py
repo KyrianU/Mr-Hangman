@@ -67,30 +67,11 @@ def menu():
             game_rules()
         elif choice == '3':
             menu_choices = False
-            print('Thanks for playing, see you soon!...')
+            print('Thanks for playing, see you soon...')
             exit()
         else:
             print(f'sorry,{choice} is not valid, please choose 1,2 or 3')
             menu()
-
-
-def start_game():
-    """
-    function that gives the player the choice to start the game.
-    Also give the option for the player to play again once the round has ended
-    """
-    while True:
-        print('would you like to start the game?')
-        start_game = input("Press 'Y for Yes and press 'N for No\n")
-
-        if start_game == 'Y':
-            play_game()
-            break
-        elif start_game == 'N':
-            menu()
-            break
-        else:
-            print("Invalid input, please choose between 'Y' or 'N' ")
 
 
 def game_end():
