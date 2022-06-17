@@ -80,6 +80,7 @@ def menu():
     """
     Displays menu choices
     """
+    hangman_header()
     menu_choices = True
     while menu_choices:
         print('Press 1 to start the game')
