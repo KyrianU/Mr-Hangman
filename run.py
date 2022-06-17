@@ -38,7 +38,7 @@ def enter():
     """
     input('Press Enter to go back to the Menu')
 
-   
+
 def game_rules():
     """
     Displays the rules of the game
