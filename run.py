@@ -4,11 +4,21 @@ from words import words
 from gallows import hangman_stages
 
 
-print(
+def hangman_header():
     """
-    Welcome to a game of Mr Hangman
+    Displays Game title as the header
     """
-)
+    print(
+        """
+
+  __  __        _   _                                         
+ |  \/  |_ __  | | | | __ _ _ __   __ _ _ __ ___   __ _ _ __  
+ | |\/| | '__| | |_| |/ _` | '_ \ / _` | '_ ` _ \ / _` | '_ \ 
+ | |  | | |    |  _  | (_| | | | | (_| | | | | | | (_| | | | |
+ |_|  |_|_|    |_| |_|\__,_|_| |_|\__, |_| |_| |_|\__,_|_| |_|
+                                  |___/                       
+        """
+    )
 
 
 def get_random_word(words):
