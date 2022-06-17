@@ -124,7 +124,7 @@ def play_game():
 
     while len(letters_in_word) and attempts > 0:
         word_completion = [letter if letter in letters_guessed
-                           else '_' for letter in word]
+                           else " _ " for letter in word]
         print("Letters guessed: ", " ".join(letters_guessed))
         print(f'Attempts remaining: {attempts}')
         print('Hidden word: ', ''.join(word_completion))
@@ -149,7 +149,7 @@ def play_game():
         print(f'You have been hanged. The hidden word was {word}')
         game_end()
     else:
-        print('congrats')
+        print(f'Congratulations {player_name}! the correct word {word}')
         game_end()
 
 
