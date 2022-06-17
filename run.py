@@ -4,6 +4,13 @@ from words import words
 from gallows import hangman_stages
 
 
+print(
+    """
+    Welcome to a game of Mr Hangman
+    """
+)
+
+
 def get_random_word(words):
     """
     Generates a random word from the words.py
