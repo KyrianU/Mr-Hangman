@@ -92,6 +92,15 @@ Mr Hangman is a Python terminal game, that runs on the Code Institue mock termin
 * Divide the words into categories(i.e sports, science, geography, animals, verbs etc...)
 * Logo to site title
 
+# Testing
+
+* As shown above in the Invalid input section, I deliberately tried to cause the code to break by using incorrect inputs. This is to test whether the various error messages were capturing wrong inputs
+* I have also tested the various functions on the game to see if they were correclty responsive and there was no issue to report
+* This game has been deployed in heroku and runs in a command line Python terminal
+* The codes were ran through [Pep 8 online checker](http://pep8online.com/) and it returned the below errors.
+
+![validator screenshot](/screenshots/Pep8%20screenshot.png)
+
 
 
 
