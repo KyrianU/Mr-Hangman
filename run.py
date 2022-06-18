@@ -167,7 +167,7 @@ def play_game():
         print(f'You have been hanged. The hidden word was {word}')
         game_end()
     else:
-        print(f'Congratulations!The correct word is {word}')
+        print(f'Congratulations! The correct word is {word}')
         game_end()
 
 
