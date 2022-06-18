@@ -83,6 +83,14 @@ Mr Hangman is a Python terminal game, that runs on the Code Institue mock termin
   ![Invalid input](/screenshots/Invalid%20input%205.png)
   ![Invalid input](/screenshots/Invalid%20input%206.png)
 
+# Future features to implement 
+
+* Add scoring system, with the 10 best scores to be shown on the leaderboard
+* 1 feature to implement in the future are difficulty levels. This could be for example making an easy level consist of words with less than 4 letters. Intermediate level consisting of 5-7 letters and a hard level with 8 letters and above in a word. This will give the user the ability to test him/herself
+* A timer could be added to the game, where a different timer could be set according to difficulty level(shorter timer for easy level)
+* Add colors, this would make the program more interactive and interesting for the user.
+* Divide the words into categories(i.e sports, science, geography, animals, verbs etc...)
+
 
 
 
