@@ -21,4 +21,16 @@ Mr Hangman is a Python terminal game, that runs on the Code Institue mock termin
   * Option to select game rules
   * Option to exit the game
 
-  ![Main screen](/screenshots/Main%20menu.png)
+  ![Main screen](/screenshots/Main%20menu.png) 
+
+* Game Rules
+  * Simple and short display of the game rules followed by a function that requires user to press enter 
+  in order to back to the menu
+
+  ![Game Rules](/screenshots/Game%20Rules.png)
+
+* Game Play
+  * After selecting Option 1 to start game, the user is then prompted to input their name. After the user inputs their
+  name, a good luck message pops up before the game begins. A random word is generated and the game starts with the hidden word showing how many letters are in it"
+
+  ![Start of game](/screenshots/Game%20play.png)
