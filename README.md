@@ -145,6 +145,7 @@ Mr Hangman is a Python terminal game, that runs on the Code Institue mock termin
   * [Code Institute](https://github.com/Code-Institute-Org/gitpod-full-template) - for the mock terminal to deploy my site.
   * [Random word generator](https://www.randomlists.com/data/words.json) - Website to which I got my list of random words from
   * Whilst I have tried to make sure I deviate as much as possible from those videos, there will be some similarities in the codes.
+  * Big thanks to my mentor Dick Vlandereen for great support and advice 
 
 
 
