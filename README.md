@@ -11,5 +11,14 @@ Mr Hangman is a Python terminal game, that runs on the Code Institue mock termin
 * The program to be relatively simple to nagivate
 * The game to be fun and challenging for user
 * The game to have little to no bugs
+* Approriate response to player/user inputs
 
-## **Features ##
+# **Features** #
+
+* Home page/Main menu
+  * View game header
+  * Option to select start game
+  * Option to select game rules
+  * Option to exit the game
+
+  ![Main screen](/screenshots/Main%20menu.png)
