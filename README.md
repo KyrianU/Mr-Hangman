@@ -59,6 +59,18 @@ Mr Hangman is a Python terminal game, that runs on the Code Institue mock termin
   ![Invalid guess](/screenshots/Invalid%20guess.png)
 
 * Winner 
-  * The player is the winner when the player guesses all the letters in the hidden word 
+  * The player is the winner when the player guesses all the letters in the hidden word. The player is then presented with the option of playing the game again or not
+
+
+  ![Player wins](/screenshots/Player%20wins.png)
+
+
+* Game Over 
+  * If the player has 6 incorrect guesses, the player is hung. The hidden word is then revealed and the player is presented with the option of playing the game again or not. If the player chooses to play again, the game will start over again. If the option selected is to not play again, the player is then prompted to head back to the main menu
+
+
+  ![Game over](/screenshots/Game%20over.png)
+
+
 
 
