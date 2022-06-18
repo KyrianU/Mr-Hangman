@@ -34,3 +34,8 @@ Mr Hangman is a Python terminal game, that runs on the Code Institue mock termin
   name, a good luck message pops up before the game begins. A random word is generated and the game starts with the hidden word showing how many letters are in it"
 
   ![Start of game](/screenshots/Game%20play.png)
+
+* Correctly guessed letter
+  * Once the game has started, the player is then presented with the hidden word to be guessed. The player can also see
+  how many letter are in the hidden word. If a letter is guessed correctly, the empty space is then replaced by the correct letter. If a letter guessed features more than once on the hidden word, the empty space will be replaced by the correct letter accordingly.
+  ![Correct guess](/screenshots/Correct%20guess.png)
