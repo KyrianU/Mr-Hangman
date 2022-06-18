@@ -114,6 +114,17 @@ Mr Hangman is a Python terminal game, that runs on the Code Institue mock termin
 * world_completion variable (line 144 in gitpod) had to be indented as it was throwing an error message which read "line too long
 * run.py python file was showing minor issues such as 'trailing whitespace' when checked in Pep8 online, however it does not look like it interferes with the functionality of the game.
 
+# Deployment 
+
+# Credits
+
+* While creating this project, I drew a lot of inspirations from the various youtube tutorials and slack overflow contents below:
+
+![Kite](https://www.youtube.com/watch?v=m4nEnsavl6w) - The visuals for the hanging stages were taken from this video
+![CBT Nuggets](https://www.youtube.com/watch?v=m4nEnsavl6w)
+![Kylie Ying](https://www.youtube.com/watch?v=cJJTnI22IF8) 
+
+
 
 
 
