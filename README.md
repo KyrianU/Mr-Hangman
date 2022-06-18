@@ -101,6 +101,14 @@ Mr Hangman is a Python terminal game, that runs on the Code Institue mock termin
 
 ![validator screenshot](/screenshots/Pep8%20screenshot.png)
 
+# Technologies used 
+
+* Languages 
+  * Python
+* The other languages included in the project was javascript, html and css. However those languages were part of the code Institute template that was used to create this project.
+
+
+
 
 
 
