@@ -90,6 +90,8 @@ Mr Hangman is a Python terminal game, that runs on the Code Institue mock termin
 * A timer could be added to the game, where a different timer could be set according to difficulty level(shorter timer for easy level)
 * Add colors, this would make the program more interactive and interesting for the user.
 * Divide the words into categories(i.e sports, science, geography, animals, verbs etc...)
+* Logo to site title
+
 
 
 
