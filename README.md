@@ -1,5 +1,8 @@
 # Mr Hangman 
 
+[Link to live deployment here](https://mr-hangman.herokuapp.com/)
+
+
 # Aim of this project
 
 Mr Hangman is a Python terminal game, that runs on the Code Institue mock terminal called Heroku.The site is aimed at users who would like to enjoy a game of Hangman. The game generates a random word to which the player has 6 attempts per word before the game is over.
@@ -116,13 +119,35 @@ Mr Hangman is a Python terminal game, that runs on the Code Institue mock termin
 
 # Deployment 
 
+* The site was deployed using Heroku - steps below
+  * Log-in or sign up to [Heroku](https://id.heroku.com/login) or [sign up](https://signup.heroku.com/login) if you do not have an account.
+  * Once logged in/ signed up - create new app, then select a unique name and a region
+  * Click **create app** button 
+  * click **settings** 
+  * Click on **reveal config vars**
+  * Input the following. Key: **PORT**, Value: **8000**
+  * Select Buildpacks, then select python and click save
+  * Select Buildpacks once more, this time select Nodejs and save again
+  * Please make sure that buildpacks are in that particular order(Python then Nodes.js)
+  * Navigate to the deploy tab, choose Github as your deployment method and connect to your Github and connect to your chosen repository
+  * You can either choose to select **automatic deploy**, which will automatically deploys whenever you push to Github, or **manual deploy**. (FYI, automatic deploy is not recommended for free account users)
+  * Heroku will then deploy
+  * [Live site here](https://mr-hangman.herokuapp.com/)
+
 # Credits
 
 * While creating this project, I drew a lot of inspirations from the various youtube tutorials and slack overflow contents below:
 
-![Kite](https://www.youtube.com/watch?v=m4nEnsavl6w) - The visuals for the hanging stages were taken from this video
-![CBT Nuggets](https://www.youtube.com/watch?v=m4nEnsavl6w)
-![Kylie Ying](https://www.youtube.com/watch?v=cJJTnI22IF8) 
+  * [Kite](https://www.youtube.com/watch?v=m4nEnsavl6w) - The visuals for the hanging stages were taken from this video
+  * [CBT Nuggets](https://www.youtube.com/watch?v=m4nEnsavl6w)
+  * [Kylie Ying](https://www.youtube.com/watch?v=cJJTnI22IF8) - My game function drew inspiration from this tutorial
+  * [ASCII Art Generator](https://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20) - for Creating word art to the Game menu 
+  * [Code Institute](https://github.com/Code-Institute-Org/gitpod-full-template) - for the mock terminal to deploy my site.
+  * [Random word generator](https://www.randomlists.com/data/words.json) - Website to which I got my list of random words from
+  * Whilst I have tried to make sure I deviate as much as possible from those videos, there will be some similarities in the codes.
+
+
+
 
 
 
