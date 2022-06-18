@@ -71,6 +71,18 @@ Mr Hangman is a Python terminal game, that runs on the Code Institue mock termin
 
   ![Game over](/screenshots/Game%20over.png)
 
+* Invalid inputs
+  * Checks are ran to ensure that no invalid inputs are submitted to the program
+  * For every invalid inputs, an error message is displayed on the program and the user is then asked to input their selections again
+
+
+  ![Invalid input](/screenshots/Invalid%20input%201.png)
+  ![Invalid input](/screenshots/invalid%20input%202.png)
+  ![Invalid input](/screenshots/Invalid%20input%203.png)
+  ![Invalid input](/screenshots/Invalid%20input%204.png)
+  ![Invalid input](/screenshots/Invalid%20input%205.png)
+  ![Invalid input](/screenshots/Invalid%20input%206.png)
+
 
 
 
