@@ -95,7 +95,7 @@ Mr Hangman is a Python terminal game, that runs on the Code Institue mock termin
 # Testing
 
 * As shown above in the Invalid input section, I deliberately tried to cause the code to break by using incorrect inputs. This is to test whether the various error messages were capturing wrong inputs
-* I have also tested the various functions on the game to see if they were correclty responsive and there was no issue to report
+* I have also tested the various functions on the game to see if they were correclty responsive and there was only a couple of minor bugs to issue to report
 * This game has been deployed in heroku and runs in a command line Python terminal
 * The codes were ran through [Pep 8 online checker](http://pep8online.com/) and it returned the below errors.
 
@@ -107,7 +107,12 @@ Mr Hangman is a Python terminal game, that runs on the Code Institue mock termin
   * Python
 * The other languages included in the project was javascript, html and css. However those languages were part of the code Institute template that was used to create this project.
 
+# Bugs
 
+* While testing the game, at first it was very hard to determine how many letters were in the hidden word, as the space I initially wrote('_') didn't do enough to seperate the letters. To combat this, I replaced this expression ('_') to (" _ ") which solved the issue
+* There was no feature that allowed the user to see a list of all the guessed letters. I then added this in the while loop in the play_game function.
+* world_completion variable (line 144 in gitpod) had to be indented as it was throwing an error message which read "line too long
+* run.py python file was showing minor issues such as 'trailing whitespace' when checked in Pep8 online, however it does not look like it interferes with the functionality of the game.
 
 
 
