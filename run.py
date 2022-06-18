@@ -1,7 +1,7 @@
 import random
 import string
-from words import words
-from gallows import hangman_stages
+from docs.words import words
+from docs.gallows import hangman_stages
 
 
 def hangman_header():
